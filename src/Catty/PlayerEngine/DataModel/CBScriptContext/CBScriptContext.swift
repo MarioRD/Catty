@@ -100,7 +100,7 @@ class CBScriptContext: CBScriptContextProtocol {
 
     final func reset() {
         _instructionPointer = 0
-        index += 1
+        index += 1 // FIXME: ThreadSanitizer detects Swift access race here
         for brick in script.brickList {
             if brick is LoopBeginBrick { (brick as AnyObject).resetCondition() }
         }
