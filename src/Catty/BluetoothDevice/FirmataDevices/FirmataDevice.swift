@@ -63,14 +63,14 @@ class FirmataDevice:BluetoothDevice,FirmataDelegate {
             case rxCharacteristicUUID():
                 print(self, "didDiscoverCharacteristicsForService", "\(service.description) : RX")
                 rxCharacteristic = c
-                cbPeripheral.setNotifyValue(true, for: rxCharacteristic!)
+                cbPeripheral.setNotifyValue(true, for: c)
                 break
             case txCharacteristicUUID():
                 print(self, "didDiscoverCharacteristicsForService", "\(service.description) : TX")
                 txCharacteristic = c
                 break
             default:
-                //                    printLog(self, "didDiscoverCharacteristicsForService", "Found Characteristic: Unknown")
+//                printLog(self, "didDiscoverCharacteristicsForService", "Found Characteristic: Unknown")
                 break
             }
             
