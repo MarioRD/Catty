@@ -108,7 +108,7 @@ import CoreBluetooth
     }
     
     //MARK: CBCentralManagerDelegate
-    open func centralManager(_:CBCentralManager, didConnect peripheral:CBPeripheral) {
+    open func centralManager(_ central: CBCentralManager, didConnect peripheral: CBPeripheral) {
         NSLog("peripheral: \(String(describing: peripheral.name))")
         guard let ownPeripheral = self.ownPeripherals[peripheral] else {
             NSLog("error")
@@ -117,7 +117,7 @@ import CoreBluetooth
         ownPeripheral.didConnectPeripheral()
     }
     
-    open func centralManager(_:CBCentralManager, didDisconnectPeripheral peripheral:CBPeripheral, error:Error?) {
+    open func centralManager(_ central: CBCentralManager, didDisconnectPeripheral peripheral: CBPeripheral, error: Error?) {
         NSLog("peripheral: \(String(describing: peripheral.name))")
         guard let ownPeripheral = self.self.ownPeripherals[peripheral] else {
             NSLog("error")
@@ -136,7 +136,7 @@ import CoreBluetooth
         }
     }
     
-    open func centralManager(_:CBCentralManager, didFailToConnect peripheral:CBPeripheral, error:Error?) {
+    open func centralManager(_ central: CBCentralManager, didFailToConnect peripheral: CBPeripheral, error: Error?) {
         guard let bcPeripheral = self.ownPeripherals[peripheral] else {
             NSLog("error")
             return
@@ -162,11 +162,8 @@ import CoreBluetooth
         self.helper.receivedKnownPeripheral(array)
 
     }
-    
-    open func centralManager(_:CBCentralManager, willRestoreState dict:[String:Any]) {
 
-    }
-    open func centralManagerDidUpdateState(_:CBCentralManager) {
+    open func centralManagerDidUpdateState(_ central: CBCentralManager) {
         self.helper.didUpdateState(self)
     }
 
