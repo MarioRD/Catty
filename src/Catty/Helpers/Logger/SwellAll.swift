@@ -1105,8 +1105,8 @@ open class Swell {
         
         if let location = givenLocation {
             newConfiguration.locations += [location]
-        } else if oldConfiguration?.locations.count > 0 {
-            newConfiguration.locations = oldConfiguration!.locations
+        } else if let locations = oldConfiguration?.locations, locations.count > 0 {
+            newConfiguration.locations = locations
         }
         
         applyLoggerConfiguration(loggerName, configuration: newConfiguration)
@@ -1215,9 +1215,8 @@ open class Swell {
                     // handle file name
                     let filenameValue: AnyObject? = map["SWLLocationFilename"]
                     if let filename: AnyObject = filenameValue {
-                        let fileLocation = getConfiguredFileLocation(configuration, item: filename);
-                        if fileLocation != nil {
-                            results += [fileLocation!]
+                        if let fileLocation = getConfiguredFileLocation(configuration, item: filename) {
+                            results += [fileLocation]
                         }
                     }
                 } else if (value == "console") {

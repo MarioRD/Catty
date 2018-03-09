@@ -38,7 +38,7 @@
             let steps = stepsFormula.interpretDouble(forSprite: object)
             spriteNode.zPosition = max(1, zValue - CGFloat(steps))
             for obj in objectList {
-                guard let objSpriteNode = (obj as AnyObject).spriteNode! else {
+                guard let objSpriteNode = (obj as AnyObject).spriteNode else {
                     continue
                 }
                 if(objSpriteNode.zPosition < zValue) && (objSpriteNode.zPosition >= (object.spriteNode?.zPosition)!) && (obj as! SpriteObject != object){
