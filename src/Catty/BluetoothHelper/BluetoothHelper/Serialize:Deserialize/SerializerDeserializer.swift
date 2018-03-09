@@ -184,7 +184,7 @@ public struct Deserializer {
         guard data.count >= T.RawType1.size + T.RawType2.size else { return nil }
 
         let rawData1 = data[0..<T.RawType1.size]
-        let rawData2 = data[T.RawType1.size..<T.RawType2.size]
+        let rawData2 = data[T.RawType1.size..<T.RawType1.size + T.RawType2.size]
         return T.RawType1.deserialize(rawData1).flatmap { rawValue1 in
             T.RawType2.deserialize(rawData2).flatmap { rawValue2 in
                 T(rawValue1:rawValue1, rawValue2:rawValue2)
@@ -196,7 +196,7 @@ public struct Deserializer {
         guard data.count >= T.size1 + T.size2 else { return nil }
 
         let rawData1 = data[0..<T.size1]
-        let rawData2 = data[T.size1..<T.size2]
+        let rawData2 = data[T.size1..<T.size1 + T.size2]
         return T(rawValue1: T.RawType1.deserialize(rawData1), rawValue2: T.RawType2.deserialize(rawData2))
     }
 }
