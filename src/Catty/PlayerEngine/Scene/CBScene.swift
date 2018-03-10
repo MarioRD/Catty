@@ -205,13 +205,10 @@ final class CBScene: SKScene {
                     )
 
                 case let bcScript as BroadcastScript:
-                    let broadcastContext = CBBroadcastScriptContext(
-                        broadcastScript: bcScript,
-                        spriteNode: spriteNode,
-                        state: .runnable
-                    )
-                    broadcastHandler?.subscribeBroadcastContext(broadcastContext)
-                    context = broadcastContext
+                    if let broadcastContext = CBBroadcastScriptContext(broadcastScript: bcScript, spriteNode: spriteNode, state: .runnable) {
+                        broadcastHandler?.subscribeBroadcastContext(broadcastContext)
+                        context = broadcastContext
+                    }
 
                 default:
                     fatalError("Unknown script! THIS SHOULD NEVER HAPPEN!")
