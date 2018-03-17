@@ -20,29 +20,12 @@
  *  along with this program.  If not, see http://www.gnu.org/licenses/.
  */
 
-#import <Foundation/Foundation.h>
-#import <CoreMotion/CoreMotion.h>
-#import "SensorManager.h"
-#import <AVFoundation/AVFoundation.h>
-
-@protocol CBSensor;
-
-@interface SensorHandler : NSObject <AVAudioRecorderDelegate,AVAudioPlayerDelegate>
-
-+ (instancetype)sharedSensorHandler;
-
-- (CMRotationRate) rotationRate;
-- (CMAcceleration) acceleration;
-- (CMMagneticField) magneticField;
-
-- (double) valueForSensor:(Sensor)sensor;
-
-- (void) stopSensors;
-- (void)faceDetectionInit;
-
-- (BOOL)locationAvailable;
-- (BOOL)accelerometerAvailable;
-- (BOOL)gyroAvailable;
-- (BOOL)magnetometerAvailable;
-- (BOOL)loudnessAvailable;
-@end
+extension UIDevice {
+    static var isSimulator: Bool {
+        return ProcessInfo.processInfo.environment["SIMULATOR_DEVICE_NAME"] != nil
+    }
+    
+    static var isDevice: Bool {
+        return isSimulator == false
+    }
+}

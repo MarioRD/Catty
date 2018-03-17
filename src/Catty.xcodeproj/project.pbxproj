@@ -54,6 +54,18 @@
 		4C2EE41F1B555B55006DE9B8 /* CBXMLPositionStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2EE41A1B555B55006DE9B8 /* CBXMLPositionStack.m */; };
 		4C2EE4201B555B55006DE9B8 /* CBXMLPropertyMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2EE41D1B555B55006DE9B8 /* CBXMLPropertyMapping.m */; };
 		4C2EE4221B555E99006DE9B8 /* XMLParserUserVariableTests095.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2EE4211B555E99006DE9B8 /* XMLParserUserVariableTests095.m */; };
+		4C38EE38205D2EFE0042BA62 /* SensorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C38EE35205D2EFE0042BA62 /* SensorMock.swift */; };
+		4C38EE3F205D3A8F0042BA62 /* CBSensorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C38EE3D205D3A8E0042BA62 /* CBSensorManager.swift */; };
+		4C38EE40205D3A8F0042BA62 /* SensorManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C38EE3E205D3A8E0042BA62 /* SensorManagerProtocol.swift */; };
+		4C38EE42205D3AA00042BA62 /* CBSensorManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C38EE41205D3AA00042BA62 /* CBSensorManagerTest.swift */; };
+		4C38EE46205D3F370042BA62 /* InclinationXSensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C38EE44205D3F370042BA62 /* InclinationXSensor.swift */; };
+		4C38EE47205D3F370042BA62 /* Sensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C38EE45205D3F370042BA62 /* Sensor.swift */; };
+		4C38EE49205D40690042BA62 /* InclinationYSensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C38EE48205D40690042BA62 /* InclinationYSensor.swift */; };
+		4C38EE4B205D42050042BA62 /* AccelerationXSensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C38EE4A205D42040042BA62 /* AccelerationXSensor.swift */; };
+		4C38EE4D205D42E20042BA62 /* AccelerationYSensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C38EE4C205D42E20042BA62 /* AccelerationYSensor.swift */; };
+		4C38EE4F205D43080042BA62 /* AccelerationZSensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C38EE4E205D43080042BA62 /* AccelerationZSensor.swift */; };
+		4C38EE52205D47580042BA62 /* CompassDirectionSensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C38EE51205D47580042BA62 /* CompassDirectionSensor.swift */; };
+		4C38EE55205D4BBA0042BA62 /* LoudnessSensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C38EE54205D4BBA0042BA62 /* LoudnessSensor.swift */; };
 		4C3BE65B1B3D2E0A00D99AB2 /* FeaturedProgramsStoreViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3BE65A1B3D2E0A00D99AB2 /* FeaturedProgramsStoreViewControllerTests.m */; };
 		4C4A71921B52733C00BBE32B /* CBXMLAbstractContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4A71911B52733C00BBE32B /* CBXMLAbstractContext.m */; };
 		4C4A71A11B527E2F00BBE32B /* CBXMLParserContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4A71A01B527E2F00BBE32B /* CBXMLParserContext.m */; };
@@ -243,6 +255,9 @@
 		4CEB22751B95E4BC00B3BE2F /* BrickInsertManagerLogicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CEB22701B95E4BC00B3BE2F /* BrickInsertManagerLogicTests.m */; };
 		4CEB22761B95E4BC00B3BE2F /* BrickInsertManagerRepeatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CEB22711B95E4BC00B3BE2F /* BrickInsertManagerRepeatTests.m */; };
 		4CEB22771B95E4BC00B3BE2F /* BrickInsertManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CEB22721B95E4BC00B3BE2F /* BrickInsertManagerTests.m */; };
+		4CEB3BFC205D0C8B008255EE /* UIDevice+Simulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEB3BFB205D0C8A008255EE /* UIDevice+Simulator.swift */; };
+		4CEB3C05205D1CD0008255EE /* InclinationXSensorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEB3C03205D1CCF008255EE /* InclinationXSensorTest.swift */; };
+		4CEB3C06205D1CD0008255EE /* SensorHandlerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CEB3C04205D1CCF008255EE /* SensorHandlerTests.m */; };
 		4CEF0CC01B9C6360003C9B20 /* Air_fight_0.5_096.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4CEF0CBF1B9C6360003C9B20 /* Air_fight_0.5_096.xml */; };
 		4CEF0CC21B9C636A003C9B20 /* Airplane_with_shadow_096.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4CEF0CC11B9C636A003C9B20 /* Airplane_with_shadow_096.xml */; };
 		4CEF0CC41B9C6373003C9B20 /* Compass_0.1_096.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4CEF0CC31B9C6373003C9B20 /* Compass_0.1_096.xml */; };
@@ -814,8 +829,6 @@
 		CA4C506B1B1C891000BB43E1 /* SetupScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4C506A1B1C891000BB43E1 /* SetupScene.swift */; };
 		CA7698C21B0E4B3F000D0340 /* CBStackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD740E71AF2D42B00C32937 /* CBStackTests.m */; };
 		CA7698DE1B0E4B3F000D0340 /* SpriteObjectMutableCopyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26506E1A6566F50050775B /* SpriteObjectMutableCopyTests.m */; };
-		CA7698DF1B0E4B3F000D0340 /* SensorHandlerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B46B271217703FB700172837 /* SensorHandlerTests.m */; };
-		CA7699191B0E4BFF000D0340 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B405BAC7175DD3F600B1A0FC /* libxml2.dylib */; };
 		CA775CBF19FD5BCB00C1E761 /* My first program.catrobat in Resources */ = {isa = PBXBuildFile; fileRef = CA6E4C4719F9C388001B65C3 /* My first program.catrobat */; };
 		CABF43B61B115E6400419A55 /* CBConditionalSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABF43AF1B115E6400419A55 /* CBConditionalSequence.swift */; };
 		CABF43B91B115E6400419A55 /* CBOperationSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABF43B21B115E6400419A55 /* CBOperationSequence.swift */; };
@@ -827,7 +840,6 @@
 		CADBD6FC19B0E8C200C62836 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 92300CE918B2196700F2B4DC /* Localizable.strings */; };
 		CADBD71919B0E8C200C62836 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F243CC170EBEF7007A071D /* AppDelegate.m */; };
 		CADBD71A19B0E8C200C62836 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
-		CADBD7EE19B0E8C200C62836 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DE5C4E6D138ED109004892CA /* libz.dylib */; };
 		CAE3C79C1B49FABC00AFE9D7 /* CBSequenceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE3C79A1B49FABC00AFE9D7 /* CBSequenceProtocol.swift */; };
 		CAE3C79D1B49FABC00AFE9D7 /* CBSequenceVisitProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE3C79B1B49FABC00AFE9D7 /* CBSequenceVisitProtocol.swift */; };
 		CAE3E4EB1B4C509800CC88BD /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = CAE3E4E91B4C509800CC88BD /* test.png */; };
@@ -990,6 +1002,18 @@
 		4C2EE41C1B555B55006DE9B8 /* CBXMLPropertyMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBXMLPropertyMapping.h; sourceTree = "<group>"; };
 		4C2EE41D1B555B55006DE9B8 /* CBXMLPropertyMapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBXMLPropertyMapping.m; sourceTree = "<group>"; };
 		4C2EE4211B555E99006DE9B8 /* XMLParserUserVariableTests095.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLParserUserVariableTests095.m; sourceTree = "<group>"; };
+		4C38EE35205D2EFE0042BA62 /* SensorMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorMock.swift; sourceTree = "<group>"; };
+		4C38EE3D205D3A8E0042BA62 /* CBSensorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBSensorManager.swift; sourceTree = "<group>"; };
+		4C38EE3E205D3A8E0042BA62 /* SensorManagerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorManagerProtocol.swift; sourceTree = "<group>"; };
+		4C38EE41205D3AA00042BA62 /* CBSensorManagerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBSensorManagerTest.swift; sourceTree = "<group>"; };
+		4C38EE44205D3F370042BA62 /* InclinationXSensor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InclinationXSensor.swift; sourceTree = "<group>"; };
+		4C38EE45205D3F370042BA62 /* Sensor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sensor.swift; sourceTree = "<group>"; };
+		4C38EE48205D40690042BA62 /* InclinationYSensor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InclinationYSensor.swift; sourceTree = "<group>"; };
+		4C38EE4A205D42040042BA62 /* AccelerationXSensor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccelerationXSensor.swift; sourceTree = "<group>"; };
+		4C38EE4C205D42E20042BA62 /* AccelerationYSensor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccelerationYSensor.swift; sourceTree = "<group>"; };
+		4C38EE4E205D43080042BA62 /* AccelerationZSensor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccelerationZSensor.swift; sourceTree = "<group>"; };
+		4C38EE51205D47580042BA62 /* CompassDirectionSensor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompassDirectionSensor.swift; sourceTree = "<group>"; };
+		4C38EE54205D4BBA0042BA62 /* LoudnessSensor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoudnessSensor.swift; sourceTree = "<group>"; };
 		4C3AE2991B03526C005E1F57 /* BrickCellDataProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BrickCellDataProtocol.h; sourceTree = "<group>"; };
 		4C3AEF2E198E7EDD00604ABF /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		4C3BE6591B3D2E0A00D99AB2 /* FeaturedProgramsStoreViewControllerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeaturedProgramsStoreViewControllerTests.h; path = Download/FeaturedProgramsStoreViewControllerTests.h; sourceTree = "<group>"; };
@@ -1228,6 +1252,9 @@
 		4CEB22701B95E4BC00B3BE2F /* BrickInsertManagerLogicTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrickInsertManagerLogicTests.m; sourceTree = "<group>"; };
 		4CEB22711B95E4BC00B3BE2F /* BrickInsertManagerRepeatTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrickInsertManagerRepeatTests.m; sourceTree = "<group>"; };
 		4CEB22721B95E4BC00B3BE2F /* BrickInsertManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrickInsertManagerTests.m; sourceTree = "<group>"; };
+		4CEB3BFB205D0C8A008255EE /* UIDevice+Simulator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+Simulator.swift"; sourceTree = "<group>"; };
+		4CEB3C03205D1CCF008255EE /* InclinationXSensorTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InclinationXSensorTest.swift; sourceTree = "<group>"; };
+		4CEB3C04205D1CCF008255EE /* SensorHandlerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SensorHandlerTests.m; sourceTree = "<group>"; };
 		4CEF0CBF1B9C6360003C9B20 /* Air_fight_0.5_096.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Air_fight_0.5_096.xml; sourceTree = "<group>"; };
 		4CEF0CC11B9C636A003C9B20 /* Airplane_with_shadow_096.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Airplane_with_shadow_096.xml; sourceTree = "<group>"; };
 		4CEF0CC31B9C6373003C9B20 /* Compass_0.1_096.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Compass_0.1_096.xml; sourceTree = "<group>"; };
@@ -2167,11 +2194,9 @@
 		AAF6D9DD1BC0C1F300686849 /* PlaceAtBrick+Instruction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "PlaceAtBrick+Instruction.swift"; path = "PlayerEngine/Instructions/Motion/PlaceAtBrick+Instruction.swift"; sourceTree = "<group>"; };
 		AAF6D9DF1BC0C2AA00686849 /* PointInDirectionBrick+Instruction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "PointInDirectionBrick+Instruction.swift"; path = "PlayerEngine/Instructions/Motion/PointInDirectionBrick+Instruction.swift"; sourceTree = "<group>"; };
 		AAF6D9E11BC0C48300686849 /* PointToBrick+Instruction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "PointToBrick+Instruction.swift"; path = "PlayerEngine/Instructions/Motion/PointToBrick+Instruction.swift"; sourceTree = "<group>"; };
-		B405BAC7175DD3F600B1A0FC /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		B46B270517703F9400172837 /* CattyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CattyTests-Info.plist"; sourceTree = "<group>"; };
 		B46B270717703F9400172837 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B46B270B17703F9400172837 /* CattyTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CattyTests-Prefix.pch"; sourceTree = "<group>"; };
-		B46B271217703FB700172837 /* SensorHandlerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SensorHandlerTests.m; sourceTree = "<group>"; };
 		B4F243CB170EBEF7007A071D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B4F243CC170EBEF7007A071D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		BA1FA9901F02A10C0084184D /* UserListFunctionsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserListFunctionsTest.m; path = Formula/UserListFunctionsTest.m; sourceTree = "<group>"; };
@@ -2293,7 +2318,6 @@
 		D63864661AE6334E008569E6 /* UploadInfoPopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadInfoPopupViewController.h; sourceTree = "<group>"; };
 		D63864671AE6334E008569E6 /* UploadInfoPopupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadInfoPopupViewController.m; sourceTree = "<group>"; };
 		D638646D1AE63F80008569E6 /* KeychainUserDefaultsDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeychainUserDefaultsDefines.h; sourceTree = "<group>"; };
-		DE5C4E6D138ED109004892CA /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2308,7 +2332,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA7699191B0E4BFF000D0340 /* libxml2.dylib in Frameworks */,
 				593624C51F76F374008A588D /* Bohr.framework in Frameworks */,
 				593624C61F76F374008A588D /* HMSegmentedControl.framework in Frameworks */,
 				593624C71F76F374008A588D /* M13ProgressSuite.framework in Frameworks */,
@@ -2324,7 +2347,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CADBD7EE19B0E8C200C62836 /* libz.dylib in Frameworks */,
 				59473A6A1F76F05000BD634F /* Bohr.framework in Frameworks */,
 				59473A6B1F76F05000BD634F /* HMSegmentedControl.framework in Frameworks */,
 				59697DAC201F631700A0071A /* Kingfisher.framework in Frameworks */,
@@ -2386,8 +2408,6 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B405BAC7175DD3F600B1A0FC /* libxml2.dylib */,
-				DE5C4E6D138ED109004892CA /* libz.dylib */,
 				59473A641F76F05000BD634F /* Bohr.framework */,
 				59473A651F76F05000BD634F /* HMSegmentedControl.framework */,
 				59697DAB201F631700A0071A /* Kingfisher.framework */,
@@ -2622,6 +2642,34 @@
 				4C2EE41D1B555B55006DE9B8 /* CBXMLPropertyMapping.m */,
 			);
 			path = CBXMLPropertyMapping;
+			sourceTree = "<group>";
+		};
+		4C38EE43205D3F370042BA62 /* Motion */ = {
+			isa = PBXGroup;
+			children = (
+				4C38EE4A205D42040042BA62 /* AccelerationXSensor.swift */,
+				4C38EE4C205D42E20042BA62 /* AccelerationYSensor.swift */,
+				4C38EE4E205D43080042BA62 /* AccelerationZSensor.swift */,
+				4C38EE44205D3F370042BA62 /* InclinationXSensor.swift */,
+				4C38EE48205D40690042BA62 /* InclinationYSensor.swift */,
+			);
+			path = Motion;
+			sourceTree = "<group>";
+		};
+		4C38EE50205D47580042BA62 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				4C38EE51205D47580042BA62 /* CompassDirectionSensor.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		4C38EE53205D4BBA0042BA62 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				4C38EE54205D4BBA0042BA62 /* LoudnessSensor.swift */,
+			);
+			path = Audio;
 			sourceTree = "<group>";
 		};
 		4C3C03F5199BA5250004F594 /* Formula */ = {
@@ -3226,6 +3274,8 @@
 		4CB4FE011B95DF2900431757 /* BrickManager */ = {
 			isa = PBXGroup;
 			children = (
+				92FC85CC1B9E1EB5001C728F /* BrickManager.h */,
+				92FC85CD1B9E1EB5001C728F /* BrickManager.m */,
 				922FE8DF1B963BDE005A19FA /* BrickSelectionManager.h */,
 				922FE8E01B963BDE005A19FA /* BrickSelectionManager.m */,
 				4CB4FE021B95DF2900431757 /* BrickInsertManager.h */,
@@ -3408,6 +3458,46 @@
 			path = Abstract;
 			sourceTree = "<group>";
 		};
+		4CEB3BFA205D0C8A008255EE /* UIDevice+Simulator */ = {
+			isa = PBXGroup;
+			children = (
+				4CEB3BFB205D0C8A008255EE /* UIDevice+Simulator.swift */,
+			);
+			path = "UIDevice+Simulator";
+			sourceTree = "<group>";
+		};
+		4CEB3C01205D1CCF008255EE /* Sensors */ = {
+			isa = PBXGroup;
+			children = (
+				4CEB3C02205D1CCF008255EE /* Motion */,
+				4CEB3C04205D1CCF008255EE /* SensorHandlerTests.m */,
+				4C38EE41205D3AA00042BA62 /* CBSensorManagerTest.swift */,
+			);
+			path = Sensors;
+			sourceTree = "<group>";
+		};
+		4CEB3C02205D1CCF008255EE /* Motion */ = {
+			isa = PBXGroup;
+			children = (
+				4CEB3C03205D1CCF008255EE /* InclinationXSensorTest.swift */,
+			);
+			path = Motion;
+			sourceTree = "<group>";
+		};
+		4CEB3C07205D1EC5008255EE /* Sensors */ = {
+			isa = PBXGroup;
+			children = (
+				4C38EE53205D4BBA0042BA62 /* Audio */,
+				4C38EE50205D47580042BA62 /* Location */,
+				4C38EE43205D3F370042BA62 /* Motion */,
+				4C38EE45205D3F370042BA62 /* Sensor.swift */,
+				4C38EE3D205D3A8E0042BA62 /* CBSensorManager.swift */,
+				4C38EE3E205D3A8E0042BA62 /* SensorManagerProtocol.swift */,
+			);
+			name = Sensors;
+			path = PlayerEngine/Sensors;
+			sourceTree = "<group>";
+		};
 		4CEF0CE71B9C655B003C9B20 /* CatrobatLanguage0.96 */ = {
 			isa = PBXGroup;
 			children = (
@@ -3501,6 +3591,7 @@
 			children = (
 				5973F235202EF2BB00A4CED9 /* MediaLibraryCollectionViewDataSourceDelegateMock.swift */,
 				599E64A5202DB2FB009494B5 /* MediaLibraryDownloaderMock.swift */,
+				4C38EE35205D2EFE0042BA62 /* SensorMock.swift */,
 				5973F243202EF37600A4CED9 /* SoundsLibraryCollectionViewDataSourceDelegateMock.swift */,
 				599E649D202D9F95009494B5 /* URLSessionMock.swift */,
 			);
@@ -4114,6 +4205,7 @@
 				92FF2E241A24C5A700093DA7 /* ProgramTableViewController+UnitTestingExtensions */,
 				591596D22035635F0015F74A /* UIBarButtonItem+InvisibleButton */,
 				92FF2E261A24C5A700093DA7 /* UIColor+Extension */,
+				4CEB3BFA205D0C8A008255EE /* UIDevice+Simulator */,
 				92FF2E291A24C5A700093DA7 /* UIImage+Extension */,
 				92FF2E2C1A24C5A700093DA7 /* UIImageView+Extension */,
 				92FF2E2F1A24C5A700093DA7 /* UIViewController+CWPopup */,
@@ -4531,7 +4623,6 @@
 		92FF30271A24DCAA00093DA7 /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
-				92FF30281A24DCAA00093DA7 /* BrickManager */,
 				92FF302B1A24DCAA00093DA7 /* Bricks */,
 				92FF30971A24DCAA00093DA7 /* Formula */,
 				92FF309C1A24DCAA00093DA7 /* FormulaEditor */,
@@ -4545,15 +4636,6 @@
 				92FF30C41A24DCAA00093DA7 /* VariablesContainer */,
 			);
 			path = DataModel;
-			sourceTree = "<group>";
-		};
-		92FF30281A24DCAA00093DA7 /* BrickManager */ = {
-			isa = PBXGroup;
-			children = (
-				92FC85CC1B9E1EB5001C728F /* BrickManager.h */,
-				92FC85CD1B9E1EB5001C728F /* BrickManager.m */,
-			);
-			path = BrickManager;
 			sourceTree = "<group>";
 		};
 		92FF302B1A24DCAA00093DA7 /* Bricks */ = {
@@ -5632,8 +5714,8 @@
 				C34B44FB17F3403400624730 /* Extensions */,
 				4CEB222C1B95E47500B3BE2F /* Bricks */,
 				4CE5C56C1E0AD71800FD021C /* Program */,
+				4CEB3C01205D1CCF008255EE /* Sensors */,
 				4C26506D1A6566C60050775B /* SpriteObject */,
-				B46B271417703FBE00172837 /* SensorHandler */,
 				B46B270417703F9400172837 /* Supporting Files */,
 				B496F5131775996D004BF78A /* Scene */,
 				4C5B27FC1B3C155C00509FDB /* Download */,
@@ -5652,14 +5734,6 @@
 				B46B270617703F9400172837 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		B46B271417703FBE00172837 /* SensorHandler */ = {
-			isa = PBXGroup;
-			children = (
-				B46B271217703FB700172837 /* SensorHandlerTests.m */,
-			);
-			name = SensorHandler;
 			sourceTree = "<group>";
 		};
 		B496F5131775996D004BF78A /* Scene */ = {
@@ -5724,6 +5798,7 @@
 			children = (
 				AA401FE51BBEF5F5001BC49F /* Instructions */,
 				AAD498B51B8D2431005894C4 /* Protocols */,
+				4CEB3C07205D1EC5008255EE /* Sensors */,
 				92FF30AF1A24DCAA00093DA7 /* Scene */,
 				CAE485D31B13AA4E00DC4485 /* Frontend */,
 				CAE485D41B13AA5200DC4485 /* Backend */,
@@ -6810,6 +6885,7 @@
 				4CEB22531B95E47500B3BE2F /* BrickMutableCopyTests.m in Sources */,
 				4CEB22661B95E47500B3BE2F /* SetXBrickTests.m in Sources */,
 				4C2A00C71B5547EB00CD4492 /* XMLAbstractTest.m in Sources */,
+				4C38EE38205D2EFE0042BA62 /* SensorMock.swift in Sources */,
 				4C5B27FE1B3C15AC00509FDB /* SearchStoreViewControllerTests.m in Sources */,
 				4CEB22651B95E47500B3BE2F /* SetTransparencyBrickTests.m in Sources */,
 				4CEB22611B95E47500B3BE2F /* PointToBrickTests.m in Sources */,
@@ -6823,6 +6899,7 @@
 				4C968C401F00288500355C0D /* BrickTests.swift in Sources */,
 				4CEB22761B95E4BC00B3BE2F /* BrickInsertManagerRepeatTests.m in Sources */,
 				4CAB10091ECF1A9A0019A67B /* HideTextBrickTests.swift in Sources */,
+				4CEB3C06205D1CD0008255EE /* SensorHandlerTests.m in Sources */,
 				4CEB225F1B95E47500B3BE2F /* PlaceAtBrickTests.m in Sources */,
 				4CEB22631B95E47500B3BE2F /* SetLookBrickTests.m in Sources */,
 				92BCDC851BF1DE2A00F9CB23 /* FirmataTests.swift in Sources */,
@@ -6838,6 +6915,7 @@
 				4C647C8A1D48E1F70060E70D /* XMLParserBlackBoxTests098.m in Sources */,
 				4CEB225B1B95E47500B3BE2F /* HideBrickTests.m in Sources */,
 				4CEB224F1B95E47500B3BE2F /* BrickMoveManagerForeverTests.m in Sources */,
+				4C38EE42205D3AA00042BA62 /* CBSensorManagerTest.swift in Sources */,
 				4C68FC891B25A00B00AB3EE8 /* FormulaEditorUtilTests.m in Sources */,
 				4C68FC951B25A00B00AB3EE8 /* InternFormulaTokenSelectionTest.m in Sources */,
 				4C68FC8C1B25A00B00AB3EE8 /* FormulaParserErrorDetectionTest.m in Sources */,
@@ -6846,6 +6924,7 @@
 				4C2EE3E71B5554D7006DE9B8 /* XMLParserObjectTests095.m in Sources */,
 				4CEB225C1B95E47500B3BE2F /* IfOnEdgeBounceBrickTests.m in Sources */,
 				4C2A00C91B554CBF00CD4492 /* XMLParserTests092.m in Sources */,
+				4CEB3C05205D1CD0008255EE /* InclinationXSensorTest.swift in Sources */,
 				4CEF0CF01B9C655B003C9B20 /* XMLParserBlackBoxTests096.m in Sources */,
 				4C647C8C1D48E1F70060E70D /* XMLSerializerTests.m in Sources */,
 				4C68FC921B25A00B00AB3EE8 /* InternFormulaStateTest.m in Sources */,
@@ -6871,7 +6950,6 @@
 				4CAB100F1ECF1AC60019A67B /* ShowTextBrickTests.swift in Sources */,
 				4C68FC8D1B25A00B00AB3EE8 /* FormulaParserFunctionsTest.m in Sources */,
 				CA7698DE1B0E4B3F000D0340 /* SpriteObjectMutableCopyTests.m in Sources */,
-				CA7698DF1B0E4B3F000D0340 /* SensorHandlerTests.m in Sources */,
 				4CEB226A1B95E47500B3BE2F /* TurnRightBrickTests.m in Sources */,
 				4C68FC941B25A00B00AB3EE8 /* InternFormulaTests.m in Sources */,
 				4CEB22601B95E47500B3BE2F /* PointInDirectionBrickTests.m in Sources */,
@@ -7104,7 +7182,9 @@
 				92FF2E941A24C7D800093DA7 /* Logger.m in Sources */,
 				AA74F0C61BC05FCE00D1E954 /* SetVolumeToBrickCell.m in Sources */,
 				92FF32B81A24E2F400093DA7 /* ContinueImageCell.m in Sources */,
+				4C38EE4B205D42050042BA62 /* AccelerationXSensor.swift in Sources */,
 				AA74EF581BC0586F00D1E954 /* SetYBrick+CBXMLHandler.m in Sources */,
+				4C38EE40205D3A8F0042BA62 /* SensorManagerProtocol.swift in Sources */,
 				AABCB3EF1BB3697E009F67D2 /* CBCustomTypes.swift in Sources */,
 				AA74F09F1BC05FCE00D1E954 /* IfLogicBeginBrickCell.m in Sources */,
 				AA74EE391BC0543600D1E954 /* ChangeVolumeByNBrick+Instruction.swift in Sources */,
@@ -7114,6 +7194,7 @@
 				4CE9ADA51EEB2DAF00F5766B /* TextFieldAlertController.swift in Sources */,
 				AA74F0CC1BC05FCE00D1E954 /* BroadcastScriptCell.m in Sources */,
 				59697DA8201F4D0400A0071A /* MediaItem.swift in Sources */,
+				4C38EE47205D3F370042BA62 /* Sensor.swift in Sources */,
 				4C724E621B4D3E8C00E27479 /* TestParser.m in Sources */,
 				591596D6203563850015F74A /* UIBarButtonItem+InvisibleButton.swift in Sources */,
 				9200C2D51C8082EF002F5CA4 /* HideTextBrickCell.m in Sources */,
@@ -7121,6 +7202,7 @@
 				AA74EFE41BC05B5F00D1E954 /* IfLogicBeginBrick.m in Sources */,
 				9218B20E1CC4AB75007B4C60 /* LineTool.m in Sources */,
 				AAAF22841BC0CA0F0076F11E /* SetXBrick+Instruction.swift in Sources */,
+				4C38EE46205D3F370042BA62 /* InclinationXSensor.swift in Sources */,
 				AA74EFF91BC05B5F00D1E954 /* SetTransparencyBrick.m in Sources */,
 				AA74EFE81BC05B5F00D1E954 /* LoopEndBrick.m in Sources */,
 				9200C2DB1C8084AA002F5CA4 /* HideTextBrick+CBXMLHandler.m in Sources */,
@@ -7150,6 +7232,8 @@
 				59697DA4201F46AD00A0071A /* LibraryImageCollectionViewCell.swift in Sources */,
 				AA74EFF41BC05B5F00D1E954 /* HideBrick.m in Sources */,
 				AAF6D9DC1BC0BFFE00686849 /* SetSizeToBrick+Instruction.swift in Sources */,
+				4C38EE55205D4BBA0042BA62 /* LoudnessSensor.swift in Sources */,
+				4CEB3BFC205D0C8B008255EE /* UIDevice+Simulator.swift in Sources */,
 				92DFB01B1A38949E00FA9B0F /* FormulaEditorViewController.m in Sources */,
 				92EC994A1BC3CA870003A891 /* Firmata.swift in Sources */,
 				5947F6D9200D08430079DBCE /* MediaType.swift in Sources */,
@@ -7168,6 +7252,7 @@
 				92FF31561A24DEB300093DA7 /* SRViewController.m in Sources */,
 				AAF6D9DA1BC0BB1F00686849 /* SetLookBrick+Instruction.swift in Sources */,
 				BAEE49BB1F165C6E00F06741 /* ReplaceItemInUserListBrick.m in Sources */,
+				4C38EE49205D40690042BA62 /* InclinationYSensor.swift in Sources */,
 				99EBDC041D5624D2008D6860 /* ChangeColorBrick+Instruction.swift in Sources */,
 				92DFB01A1A38949E00FA9B0F /* InternToken.m in Sources */,
 				9218B20D1CC4AB75007B4C60 /* HandTool.m in Sources */,
@@ -7177,6 +7262,7 @@
 				9218B2101CC4AB75007B4C60 /* PipetteTool.m in Sources */,
 				923503901BA707DE00021F6A /* BaseLoginViewController.m in Sources */,
 				92FF2EA11A24C7D800093DA7 /* TimerLabel.m in Sources */,
+				4C38EE52205D47580042BA62 /* CompassDirectionSensor.swift in Sources */,
 				92FF30C81A24DCAA00093DA7 /* Brick.m in Sources */,
 				AA74F0971BC05FCE00D1E954 /* BrickCellSoundData.m in Sources */,
 				92B46F911BC7B3E5004980C1 /* ArduinoBrick.m in Sources */,
@@ -7196,6 +7282,7 @@
 				9218B20C1CC4AB75007B4C60 /* FillTool.m in Sources */,
 				929CC0FB1BC3A2420027DEC0 /* PhiroRGBLightBrick+Instruction.swift in Sources */,
 				D63864651AE632FE008569E6 /* ProgramsForUploadViewController.m in Sources */,
+				4C38EE3F205D3A8F0042BA62 /* CBSensorManager.swift in Sources */,
 				92B46F921BC7B3E5004980C1 /* ArduinoSendDigitalValueBrick.m in Sources */,
 				BA1FA9A21F02B0C80084184D /* InsertItemIntoUserListBrick+Instruction.swift in Sources */,
 				92FF2EBF1A24C8A700093DA7 /* CatrobatProgram.m in Sources */,
@@ -7265,6 +7352,7 @@
 				AAF6D9C91BC0914100686849 /* CBPlayerConfig.swift in Sources */,
 				AA74EFF51BC05B5F00D1E954 /* NextLookBrick.m in Sources */,
 				92DFB0121A38949E00FA9B0F /* InternFormula.m in Sources */,
+				4C38EE4F205D43080042BA62 /* AccelerationZSensor.swift in Sources */,
 				BAEE49C01F165D1300F06741 /* ReplaceItemInUserListBrick+Instruction.swift in Sources */,
 				AA74F0C41BC05FCE00D1E954 /* ChangeVolumeByNBrickCell.m in Sources */,
 				92FF30FD1A24DCAA00093DA7 /* Header.m in Sources */,
@@ -7390,6 +7478,7 @@
 				92FF32B31A24E2F400093DA7 /* LoadingView.m in Sources */,
 				929CC0ED1BC39B8C0027DEC0 /* PhiroMotorMoveBackwardBrickCell.m in Sources */,
 				BA9CAB621EC3853600796056 /* AddItemToUserListBrick+Instruction.swift in Sources */,
+				4C38EE4D205D42E20042BA62 /* AccelerationYSensor.swift in Sources */,
 				4C4A71921B52733C00BBE32B /* CBXMLAbstractContext.m in Sources */,
 				59ABDC622021BBFB00061403 /* LooksTableViewController+MediaLibrary.swift in Sources */,
 				811FB6EA1A4980EF00957E10 /* ScriptCollectionViewController.m in Sources */,

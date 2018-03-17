@@ -20,29 +20,18 @@
  *  along with this program.  If not, see http://www.gnu.org/licenses/.
  */
 
-#import <Foundation/Foundation.h>
-#import <CoreMotion/CoreMotion.h>
-#import "SensorManager.h"
-#import <AVFoundation/AVFoundation.h>
+import CoreMotion
 
-@protocol CBSensor;
-
-@interface SensorHandler : NSObject <AVAudioRecorderDelegate,AVAudioPlayerDelegate>
-
-+ (instancetype)sharedSensorHandler;
-
-- (CMRotationRate) rotationRate;
-- (CMAcceleration) acceleration;
-- (CMMagneticField) magneticField;
-
-- (double) valueForSensor:(Sensor)sensor;
-
-- (void) stopSensors;
-- (void)faceDetectionInit;
-
-- (BOOL)locationAvailable;
-- (BOOL)accelerometerAvailable;
-- (BOOL)gyroAvailable;
-- (BOOL)magnetometerAvailable;
-- (BOOL)loudnessAvailable;
-@end
+class AccelerationZSensor : AccelerationXSensor {
+    
+    override init(motionManager : CMMotionManager) {
+        super.init(motionManager: motionManager)
+    }
+    
+    override var tagForSerialization : String { return "Z_ACCELERATION" }
+    override var nameForFormulaEditor : String { return kUIFESensorAccelerationZ }
+    
+    override func rawValue() -> Double {
+        return motionManager.accelerometerData!.acceleration.z;
+    }
+}

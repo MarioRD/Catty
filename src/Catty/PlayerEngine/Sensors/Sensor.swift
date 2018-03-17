@@ -20,29 +20,24 @@
  *  along with this program.  If not, see http://www.gnu.org/licenses/.
  */
 
-#import <Foundation/Foundation.h>
-#import <CoreMotion/CoreMotion.h>
-#import "SensorManager.h"
-#import <AVFoundation/AVFoundation.h>
+protocol CBSensor {
+    var tagForSerialization : String { get }
+    var nameForFormulaEditor : String { get }
+    var defaultValue : Double { get }
+    
+    func isAvailable() -> Bool
+    func isActive() -> Bool
+    func start()
+    func stop()
+    
+    func rawValue() -> Double
+    func transformToPocketCode(rawValue : Double) -> Double
+}
 
-@protocol CBSensor;
-
-@interface SensorHandler : NSObject <AVAudioRecorderDelegate,AVAudioPlayerDelegate>
-
-+ (instancetype)sharedSensorHandler;
-
-- (CMRotationRate) rotationRate;
-- (CMAcceleration) acceleration;
-- (CMMagneticField) magneticField;
-
-- (double) valueForSensor:(Sensor)sensor;
-
-- (void) stopSensors;
-- (void)faceDetectionInit;
-
-- (BOOL)locationAvailable;
-- (BOOL)accelerometerAvailable;
-- (BOOL)gyroAvailable;
-- (BOOL)magnetometerAvailable;
-- (BOOL)loudnessAvailable;
-@end
+extension CBSensor {
+    var defaultUpdateInterval : Double { return 0.8 }
+    
+    func value() -> Double {
+        return transformToPocketCode(rawValue: rawValue())
+    }
+}

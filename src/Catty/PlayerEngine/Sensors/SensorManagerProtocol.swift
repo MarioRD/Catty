@@ -20,29 +20,19 @@
  *  along with this program.  If not, see http://www.gnu.org/licenses/.
  */
 
-#import <Foundation/Foundation.h>
-#import <CoreMotion/CoreMotion.h>
-#import "SensorManager.h"
-#import <AVFoundation/AVFoundation.h>
+import CoreMotion
 
-@protocol CBSensor;
-
-@interface SensorHandler : NSObject <AVAudioRecorderDelegate,AVAudioPlayerDelegate>
-
-+ (instancetype)sharedSensorHandler;
-
-- (CMRotationRate) rotationRate;
-- (CMAcceleration) acceleration;
-- (CMMagneticField) magneticField;
-
-- (double) valueForSensor:(Sensor)sensor;
-
-- (void) stopSensors;
-- (void)faceDetectionInit;
-
-- (BOOL)locationAvailable;
-- (BOOL)accelerometerAvailable;
-- (BOOL)gyroAvailable;
-- (BOOL)magnetometerAvailable;
-- (BOOL)loudnessAvailable;
-@end
+protocol SensorManagerProtocol {
+    
+    var defaultValueForUndefinedSensor : Double { get set }
+    
+    func register(sensor: CBSensor) -> Void
+    
+    func sensor(tag: String) -> CBSensor?
+    
+    func value(sensor: CBSensor) -> Double
+    
+    func value(sensorTag: String) -> Double
+    
+    func stopSensors()
+}

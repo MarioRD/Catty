@@ -148,19 +148,20 @@
             
         case SENSOR: {
             //NSDebug(@"SENSOR");
-            Sensor sensor = [SensorManager sensorForString:self.value];
+            result = [NSNumber numberWithDouble: [[CBSensorManager shared] valueWithSensorTag:self.value]];
+            /*Sensor sensor = [SensorManager sensorForString:self.value];
             if([SensorManager isObjectSensor:sensor]) {
                 result = [NSNumber numberWithDouble:[self interpretLookSensor:sensor forSprite:sprite]];
             } else {
-                result = [NSNumber numberWithDouble:[[SensorHandler sharedSensorHandler] valueForSensor:sensor]];
-            }
+                result = [NSNumber numberWithDouble: [[CBSensorManager shared] valueWithSensorTag:self.value]];
+            }*/
             break;
         }
             
         case BRACKET: {
            // NSDebug(@"BRACKET");
             result = [self.rightChild interpretRecursiveForSprite:sprite];
-            break;
+            break;  
         }
         case STRING:
     
