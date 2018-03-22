@@ -64,7 +64,7 @@
         audioPlayers = [[NSMutableDictionary alloc] init];
         NSMutableDictionary *sounds = [self.sounds mutableCopy];
         [sounds setObject:audioPlayers forKey:key];
-        self.sounds = sounds;
+        self.sounds = [sounds copy];
     }
     
     NSString *path =[NSString stringWithFormat:@"%@/%@", filePath, fileName];
